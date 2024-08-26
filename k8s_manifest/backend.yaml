@@ -16,6 +16,7 @@ spec:
       containers:
       - name: chat-backend
         image: dhanush789245/chat-backend:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
         env:
