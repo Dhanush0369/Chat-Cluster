@@ -21,13 +21,12 @@ spec:
         - containerPort: 5000
         env:
         - name: MONGO_DB_URI
-          value: mongodb://root:password@mongodb:27017/yourdatabase?authSource=admin
+          value: mongodb://root:password@mongodb:27017
         - name: JWT_SECRET
           value: dhanush
         - name: NODE_ENV
           value: development
 ---
-# backend-service.yaml
 apiVersion: v1
 kind: Service
 metadata:
