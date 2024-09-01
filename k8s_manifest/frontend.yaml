@@ -25,11 +25,11 @@ kind: Service
 metadata:
   name: chat-frontend
 spec:
-  type: NodePort
+  type: LoadBalancer  
   ports:
     - port: 3000
       targetPort: 3000
-      nodePort: 30783
+      protocol: TCP   
   selector:
     app: chat-frontend
   
