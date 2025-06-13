@@ -21,7 +21,7 @@ spec:
         - containerPort: 5000
         env:
         - name: MONGO_DB_URI
-          value: mongodb://root:password@mongodb:27017
+          value: mongodb://root:password@mongodb:27017/chatapp?authSource=admin
         - name: JWT_SECRET
           value: dhanush
         - name: NODE_ENV
